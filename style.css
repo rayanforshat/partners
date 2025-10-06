@@ -467,3 +467,32 @@ body {
         font-size: 1rem;
     }
 }
+
+
+
+.highlight {
+    background: linear-gradient(120deg, #fff3cd, #fff3cd);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.partner-logo-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid #b99462;
+}
+
+.partner-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.05);
+}
