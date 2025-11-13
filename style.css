@@ -227,8 +227,6 @@ body {
     background: linear-gradient(135deg, #f0f8f8, #ffffff);
 }
 
-
-
 .service-name {
     font-size: 1.1rem;
     font-weight: 600;
@@ -263,6 +261,77 @@ body {
     font-size: 1.6rem;
     color: #00343a;
     font-weight: 700;
+}
+
+/* Dental Table Styles */
+.dental-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 30px 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.dental-table {
+    width: 100%;
+    border-collapse: collapse;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+
+.dental-table thead {
+    background: linear-gradient(135deg, #00343a, #004d56);
+}
+
+.dental-table thead th {
+    color: #b99462;
+    padding: 18px 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 2px solid #b99462;
+}
+
+.dental-table tbody td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+.dental-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.dental-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.dental-table tbody tr:hover {
+    background-color: #f0f8f8;
+    transform: scale(1.01);
+    box-shadow: 0 3px 10px rgba(0, 52, 58, 0.1);
+}
+
+.price-highlight {
+    color: #b99462;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.price-free {
+    color: #00343a;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.price-starts {
+    color: #666;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .note-section {
@@ -424,6 +493,27 @@ body {
     border-radius: 3px;
 }
 
+.partner-logo-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid #b99462;
+}
+
+.partner-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
@@ -454,6 +544,24 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    
+    .dental-table-wrapper {
+        padding: 10px;
+    }
+    
+    .dental-table {
+        font-size: 0.85rem;
+    }
+    
+    .dental-table thead th {
+        padding: 12px 8px;
+        font-size: 0.95rem;
+    }
+    
+    .dental-table tbody td {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -466,33 +574,23 @@ body {
         padding: 20px 25px;
         font-size: 1rem;
     }
-}
-
-
-
-.highlight {
-    background: linear-gradient(120deg, #fff3cd, #fff3cd);
-    padding: 2px 4px;
-    border-radius: 3px;
-}
-
-.partner-logo-section {
-    text-align: center;
-    margin-top: 40px;
-    padding: 30px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border: 3px solid #b99462;
-}
-
-.partner-logo {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.partner-logo:hover {
-    transform: scale(1.05);
+    
+    .dental-table {
+        font-size: 0.75rem;
+    }
+    
+    .dental-table thead th {
+        padding: 10px 5px;
+        font-size: 0.85rem;
+    }
+    
+    .dental-table tbody td {
+        padding: 8px 5px;
+        font-size: 0.75rem;
+    }
+    
+    .price-highlight,
+    .price-free {
+        font-size: 1rem;
+    }
 }
